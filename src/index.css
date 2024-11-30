@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.ant-form-item-required::before {
+  content: "" !important;
+}
+
+@layer utilities {
+  .caret-thick {
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-table-cell::before {
+  display: none;
+}
+
+.ant-pagination-item {
+  border: none;
+  background-color: transparent !important;
+  color: #333;
+}
+.ant-pagination-item a {
+  color: #333 !important;
+}
+
+.ant-pagination-item-active {
+  background: #00b894 !important;
+  border-color: #00b894 !important;
+  color: white !important;
+  border-radius: 4px;
+}
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-item:hover {
+  border-color: #00b894;
+}
+
+.ant-pagination-options {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  background: #f9f9f9;
+  border: none;
+}
+
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+  background: #00b894;
+  color: white;
+}
+
+.ant-pagination-options {
+  border: none !important;
+}
